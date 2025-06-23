@@ -20,7 +20,6 @@ body {
 }
 nav {
     width: 100%;
-    padding: 2rem 5rem 2rem 5rem;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -67,7 +66,6 @@ button:hover {
     display: flex;
     align-items: center;
     justify-content: space-around;
-    padding: 2rem 5rem 2rem 5rem;
     height: 70vh;
 }
 
@@ -150,8 +148,12 @@ button:hover {
 }
 
 .project {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     margin: 3rem 5rem;
 }
+
 
 .project h2{
     font-size: 28px;
@@ -231,3 +233,49 @@ input,textarea{
     border-radius: 6px;
     outline: none;
 }
+
+
+    @media screen and (max-width: 768px){
+
+    .home-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        overflow-x: hidden;
+        font-size: 1rem;
+    }
+
+    .home-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 80%;
+    }
+
+    .skill-list {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .project-list{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 85%;
+        padding: 0;
+    }
+
+    .contact {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .contact-form {
+        width: 80%;
+    }
+    }
